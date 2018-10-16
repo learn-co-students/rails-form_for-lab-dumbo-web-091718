@@ -1,0 +1,5 @@
+<h1><%= "#{@school_class.title} in room #{@school_class.room_number}" %></h1>
+
+<%= button_to "View All Classes", school_classes_path, method: :get %><br>
+<%= button_to "Edit This Class", edit_school_class_path, method: :get %><br>
+<%= button_to "Delete This Class", school_class_path(@school_class), method: :delete %><br>

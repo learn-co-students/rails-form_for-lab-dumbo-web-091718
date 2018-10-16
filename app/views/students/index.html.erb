@@ -1,0 +1,6 @@
+<h1>Students</h1>
+<% @students.each do |student| %>
+<h3><%= link_to "#{student.to_s}", students_path(student) %></h3>
+<% end %>
+
+<%= button_to "Add A Student", new_student_path, method: :get %>
